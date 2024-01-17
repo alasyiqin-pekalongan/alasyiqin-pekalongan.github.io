@@ -3,8 +3,8 @@ body {
     padding: 0;
 }
 
-.carouselExampleCaptions {
-    width: 60%; /* Sesuaikan lebar sesuai keinginan Anda */
+.carousel {
+    width: 80%; /* Sesuaikan lebar sesuai keinginan Anda */
     margin: auto; /* Membuat carousel berada di tengah-tengah */
   }
 
