@@ -1,5 +1,5 @@
 const cacheName = "alasyiqin-pekalongan"
-const preCache = ["/","/css/style.css","/css/bootstrap.min.css","/js/script.js","/js/bootstrap.min.js"]
+const preCache = ["/","/css","/js","/img","/fitur"]
 
 self.addEventListener("install", (e)=>{
   console.log("service worker installed")
@@ -10,8 +10,8 @@ self.addEventListener("install", (e)=>{
 })
 
 self.addEventListener("fetch",(e)=>{
-  e.responWith((async ()=>{
-    const cache = await cache .open(cacheName)
+  e.respondWith((async ()=>{
+    const cache = await caches.open(cacheName)
     const resCache = await cache.match(e.request)
     
     if(resCache) return resCache
