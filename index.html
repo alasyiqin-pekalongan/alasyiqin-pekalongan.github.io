@@ -3,8 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme_color" content="#f8fafc" />
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="manifest.json" />
 
     <link rel="icon" href="/img/20220921_132919.png" type="image/x-icon" />
     <link rel="shortcut icon" href="/img/20220921_132919.png" type="image/x-icon" />
@@ -80,24 +82,31 @@
     <!-- social media icon -->
     <div class="social-media mt-3">
       <a href="https://www.facebook.com/profile.php?id=100077311518235&locale=id_ID" class="text-decoration-none">
-          <img class="social-icon" src="/img/social-media/facebook.png" alt="Facebook">
+        <img class="social-icon" src="/img/social-media/facebook.png" alt="Facebook" />
       </a>
 
       <a href="https://www.youtube.com/@sholawateverydaymusic" class="text-decoration-none">
-          <img class="social-icon" src="/img/social-media/youtube.png" alt="Youtube">
+        <img class="social-icon" src="/img/social-media/youtube.png" alt="Youtube" />
       </a>
 
       <a href="https://www.instagram.com/alasyiqin_pekalongan" class="text-decoration-none">
-          <img class="social-icon" src="/img/social-media/instagram.png" alt="Instagram">
+        <img class="social-icon" src="/img/social-media/instagram.png" alt="Instagram" />
       </a>
 
       <!-- Tambahkan ikon sosial media lainnya sesuai kebutuhan -->
-  </div>
+    </div>
 
     <!-- End Page -->
     <footer class="text-center bottom-0">&copy; 2024 Dev | Ahmad Saputra</footer>
 
     <!-- <script src="script.js"></script> -->
+    <script>
+      window.addEventListener("load",()=>{
+        if ("serviceWorker" in navigator){
+          navigator.serviceWorker.register("sw.js")
+        }
+      })
+    </script>
     <script src="/js/bootstrap.bundle.min.js"></script>
     <script src="/js/script.js"></script>
   </body>

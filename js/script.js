@@ -1,7 +1,7 @@
-document.getElementById('learnMoreBtn').addEventListener('click', function() {
-    // Ganti URL dengan URL halaman "About" Anda
-    window.location.href = '/index.html';
-});
+// document.getElementById('learnMoreBtn').addEventListener('click', function() {
+//     // Ganti URL dengan URL halaman "About" Anda
+//     window.location.href = '/index.html';
+// });
 
 // function searchContent() {
 //             // Ambil nilai pencarian

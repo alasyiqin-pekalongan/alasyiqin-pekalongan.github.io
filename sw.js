@@ -1,0 +1,28 @@
+const cacheName = "alasyiqin-pekalongan"
+const preCache = ["/","/css/style.css","/css/bootstrap.min.css","/js/script.js","/js/bootstrap.min.js"]
+
+self.addEventListener("install", (e)=>{
+  console.log("service worker installed")
+  e.waitUntil ((async ()=>{
+    const cache = await caches.open(cacheName)
+    cache.addAll(preCache)
+  })())
+})
+
+self.addEventListener("fetch",(e)=>{
+  e.responWith((async ()=>{
+    const cache = await cache .open(cacheName)
+    const resCache = await cache.match(e.request)
+    
+    if(resCache) return resCache
+    
+    try {
+      const res = await fetch(e.request)
+      
+      cache.put(e.request,res.clone())
+      return res
+    } catch (error){
+      console.log(error)
+    }
+  })())
+})
