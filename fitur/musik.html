@@ -43,15 +43,16 @@
 
     <!-- Page -->
     <div class="page">
-
-      <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#massalam" aria-expanded="false" aria-controls="#massalam">
-        Assalamu'alaik - Busyrolana
-      </button>
-      </p>
-      <div class="collapse align-content-center" id="massalam">
-        <audio controls class="t-center">
-            <source src="/assets/music/habsyi/AA - Assalamu_alaik_Busyrolana.mp3" type="audio/mp3">
+      <div class="music-player-container">
+        <div class="blurry-background"></div>
+        <audio id="audioPlayer" controls>
+          <source src="/assets/music/habsyi/AA - Assalamu_alaik_Busyrolana.mp3" type="audio/mp3" />
+          Your browser does not support the audio tag.
         </audio>
+        <div class="controls">
+          <button onclick="playPause()">Play/Pause</button>
+          <button onclick="stop()">Stop</button>
+        </div>
       </div>
 
       <!-- end page -->
@@ -62,11 +63,11 @@
 
     <!-- <script src="script.js"></script> -->
     <script>
-      window.addEventListener("load",()=>{
-        if("serviceWorker" in navigator){
-          navigator.serviceWorker.register("/sw.js")
+      window.addEventListener('load', () => {
+        if ('serviceWorker' in navigator) {
+          navigator.serviceWorker.register('/sw.js');
         }
-      })
+      });
     </script>
     <script src="/js/bootstrap.bundle.min.js"></script>
     <script src="/js/script.js"></script>

@@ -16,3 +16,20 @@
 //                 document.getElementById('faya_ayyuharroju').classList.remove('show');
 //             }
 //         }
+
+
+function playPause() {
+    var audio = document.getElementById("audioPlayer");
+    if (audio.paused) {
+      audio.play();
+    } else {
+      audio.pause();
+    }
+  }
+  
+  function stop() {
+    var audio = document.getElementById("audioPlayer");
+    audio.pause();
+    audio.currentTime = 0;
+  }
+  
