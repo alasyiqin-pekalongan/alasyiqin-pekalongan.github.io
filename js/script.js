@@ -30,7 +30,3 @@ function togglePlayPause() {
     playPauseBtn.textContent = 'Play';
   }
 }
-
-function changeVolume() {
-  audio.volume = volumeControl.value / 100;
-}

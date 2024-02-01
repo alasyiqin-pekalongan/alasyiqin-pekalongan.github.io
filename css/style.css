@@ -81,15 +81,27 @@ div ul img {
   margin: 10px 0;
 }
 
-.controls {
+.control {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   margin-top: 20px;
 }
 
-#volumeControl {
-  margin-left: 10px;
+
+.download-btn {
+  background-color: #27ae60;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 16px;
+  text-decoration: none;
+  margin-top: 10px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.download-btn:hover {
+  background-color: #219952;
 }
 
 
