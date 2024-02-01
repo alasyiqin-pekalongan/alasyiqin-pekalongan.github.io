@@ -42,15 +42,23 @@
     <!-- End Navbar -->
 
     <!-- Page -->
-    <div class="music-card" id="musicCard">
-      <img src="/img/20220921_132919.png" alt="Album Cover" class="cover">
-      <h2 class="title">Asslamu'alaik & Busyrolana</h2>
-      <h3 class="artist">Al-'asyiqin Pekalongan</h3>
-      <audio id="audio" src="/assets/music/habsyi/AA - Assalamu_alaik_Busyrolana.mp3"></audio>
-      <div class="control">
-        <button id="playPauseBtn" onclick="togglePlayPause()">Play</button>
-        <input type="range" id="volumeControl" onechange="changeVolume()" value="100">
+    <button class="btn fw-bold btn-outline-secondary btn-sm w-100" type="button" data-bs-toggle="collapse" data-bs-target="#ayyuShoutin" aria-expanded="false" aria-controls="#ayyuShoutin">
+      AYYU SHOUTIN BI YUNADI
+    </button>
+    </p>
+    <div class="collapse" id="ayyuShoutin">
+    <div class="card card-body d-flex align-items-center">
+      <div class="music-card" id="musicCard">
+        <img src="/img/20220921_132919.png" alt="Album Cover" class="cover">
+        <h2 class="title">Asslamu'alaik & Busyrolana</h2>
+        <h3 class="artist">Al-'asyiqin Pekalongan</h3>
+        <audio id="audio" src="/assets/music/habsyi/AA - Assalamu_alaik_Busyrolana.mp3"></audio>
+        <div class="control">
+          <button id="playPauseBtn" onclick="togglePlayPause()">Play</button>
+          <input type="range" id="volumeControl" onechange="changeVolume()" value="100">
+        </div>
       </div>
+    </div>
     </div>
 
       <!-- end page -->
