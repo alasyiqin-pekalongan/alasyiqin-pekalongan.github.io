@@ -42,21 +42,18 @@
     <!-- End Navbar -->
 
     <!-- Page -->
-    <div class="page">
-      <div class="music-player-container">
-        <div class="blurry-background"></div>
-        <audio id="audioPlayer" controls>
-          <source src="/assets/music/habsyi/AA - Assalamu_alaik_Busyrolana.mp3" type="audio/mp3" />
-          Your browser does not support the audio tag.
-        </audio>
-        <div class="controls">
-          <button onclick="playPause()">Play/Pause</button>
-          <button onclick="stop()">Stop</button>
-        </div>
+    <div class="music-card" id="musicCard">
+      <img src="/img/20220921_132919.png" alt="Album Cover" class="cover">
+      <h2 class="title">Asslamu'alaik & Busyrolana</h2>
+      <h3 class="artist">Al-'asyiqin Pekalongan</h3>
+      <audio id="audio" src="/assets/music/habsyi/AA - Assalamu_alaik_Busyrolana.mp3"></audio>
+      <div class="control">
+        <button id="playPauseBtn" onclick="togglePlayPause()">Play</button>
+        <input type="range" id="volumeControl" onechange="changeVolume()" value="100">
       </div>
+    </div>
 
       <!-- end page -->
-    </div>
 
     <!-- End Page -->
     <footer class="text-center bottom-0">&copy; 2024 Dev | Ahmad Saputra</footer>

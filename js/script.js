@@ -17,19 +17,20 @@
 //             }
 //         }
 
+const audio = document.getElementById('audio');
+const playPauseBtn = document.getElementById('playPauseBtn');
+const volumeControl = document.getElementById('volumeControl');
 
-function playPause() {
-    var audio = document.getElementById("audioPlayer");
-    if (audio.paused) {
-      audio.play();
-    } else {
-      audio.pause();
-    }
-  }
-  
-  function stop() {
-    var audio = document.getElementById("audioPlayer");
+function togglePlayPause() {
+  if (audio.paused) {
+    audio.play();
+    playPauseBtn.textContent = 'Pause';
+  } else {
     audio.pause();
-    audio.currentTime = 0;
+    playPauseBtn.textContent = 'Play';
   }
-  
+}
+
+function changeVolume() {
+  audio.volume = volumeControl.value / 100;
+}

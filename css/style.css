@@ -61,41 +61,36 @@ div ul img {
 
 /* control music */
 
-.music-player-container {
-  position: relative;
+.music-card {
+  background-color: rgba(0, 0, 0, .5);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  width:18rem;
+  justify-content: center;
+  align-items: center;
 }
 
-.blurry-background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url('background_image.jpg'); /* Ganti dengan URL gambar latar belakang yang diinginkan */
-  background-size: cover;
-  filter: blur(10px);
-}
+.cover {
+  width: 100px;
+  border-radius: 50%;
+} 
 
-audio {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 1;
+.title {
+  margin: 10px 0;
 }
 
 .controls {
-  position: absolute;
-  top: 80%;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
 }
 
-button {
-  margin: 0 10px;
-  padding: 10px;
-  cursor: pointer;
+#volumeControl {
+  margin-left: 10px;
 }
+
 
 /* end-control music */
