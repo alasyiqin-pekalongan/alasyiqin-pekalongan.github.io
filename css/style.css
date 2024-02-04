@@ -61,48 +61,4 @@ div ul img {
 
 /* control music */
 
-.music-card {
-  background-color: rgba(0, 0, 0, .5);
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  text-align: center;
-  width:18rem;
-  justify-content: center;
-  align-items: center;
-}
-
-.cover {
-  width: 100px;
-  border-radius: 50%;
-} 
-
-.title {
-  margin: 10px 0;
-}
-
-.control {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  margin-top: 20px;
-}
-
-
-.download-btn {
-  background-color: #27ae60;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  padding: 8px 16px;
-  text-decoration: none;
-  margin-top: 10px;
-  transition: background-color 0.3s ease-in-out;
-}
-
-.download-btn:hover {
-  background-color: #219952;
-}
-
-
 /* end-control music */
