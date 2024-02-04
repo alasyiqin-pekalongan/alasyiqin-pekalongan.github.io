@@ -42,11 +42,36 @@
     <!-- End Navbar -->
 
     <!-- Page -->
-    
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <div class="music-card">
+            <img src="/img/20220921_132919.png" alt="Music Cover" class="music-cover" />
+            <div class="music-info">
+              <div class="music-title">Song Title 1</div>
+              <div class="music-artist">Artist 1</div>
+            </div>
+            <div class="music-controls">
+              <button class="control-btn" onclick="playPause()">▶</button>
+              <button class="control-btn" onclick="stop()">⏹</button>
+            </div>
+            <a href="#" class="download-btn">Download</a>
+            <audio id="audioPlayer" src="/assets/music/habsyi/AA - Assalamu_alaik_Busyrolana.mp3"></audio>
+            <div class="audio-dropdown">
+              <label for="audioSelect" class="form-label">Pilih Audio:</label>
+              <select class="form-select" id="audioSelect" onchange="changeAudio()">
+                <option value="Assalamu'alaik">Assalamu'alaik</option>
+                <option value="Sholawatullahi Taghsya">Sholawatullahi Taghsya</option>
+                <!-- Tambahkan opsi untuk audio tambahan -->
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-      <!-- end page -->
+    <!-- end page -->
 
-    <!-- End Page -->
     <footer class="text-center bottom-0">&copy; 2024 Dev | Ahmad Saputra</footer>
 
     <!-- <script src="script.js"></script> -->
