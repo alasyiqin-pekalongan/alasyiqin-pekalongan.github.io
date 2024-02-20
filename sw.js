@@ -1,11 +1,11 @@
 const cacheName = "alasyiqin-pekalongan"
-// const preCache = ["/","/css","/js","/img","/fitur"] //backup
+const preCache = ["/","/css","/js","/img","/fitur"] //backup
 
 self.addEventListener("install", (e)=>{
   console.log("service worker installed")
   e.waitUntil ((async ()=>{
     const cache = await caches.open(cacheName)
-    cache.addAll() //(isi preCache)
+    cache.addAll(preCache) //(isi preCache)
   })())
 })
 
