@@ -71,7 +71,7 @@ div ul img {
 
 .arab .judul::after {
   content: '';
-  top: 2;
+  top: 1;
   position: absolute;
   transform: translateX(-50%);
   width: 20%; /* lebar garis */
