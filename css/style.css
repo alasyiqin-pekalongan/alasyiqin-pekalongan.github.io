@@ -67,6 +67,7 @@ div ul img {
 
 .arab .judul {
   font-size: 6vw;
+  font-weight: bold;
 }
 
 .arab .judul::after {
@@ -77,6 +78,13 @@ div ul img {
   width: 20%; /* lebar garis */
   height: 2px; /* ketebalan garis */
   background-color: black; /* warna garis */
+}
+
+.arab .unduh {
+  width: 25px;
+  position: absolute;
+  top: 20;
+  right: 2vw;
 }
 
 /* control music */
